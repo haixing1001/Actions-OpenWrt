@@ -18,6 +18,3 @@ echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.defau
 echo "src-git PWpackages https://github.com/xiaorouji/openwrt-passwall.git;packages" >> feeds.conf.default
 echo "src-git PWluci https://github.com/xiaorouji/openwrt-passwall.git;luci" >> feeds.conf.default
 echo "src-git smartdnsluci https://github.com/pymumu/luci-app-smartdns.git;lede" >> feeds.conf.default
-sed -i 's/1.2021.35/2022.05.22/g' feeds/packages/net/smartdns/Makefile
-sed -i 's/f50e4dd0813da9300580f7188e44ed72a27ae79c/bc68d5979ccf4beb2721e1e466539da550236f68/g' feeds/packages/net/smartdns/Makefile
-sed -i 's/^PKG_MIRROR_HASH/#&/' feeds/packages/net/smartdns/Makefile
