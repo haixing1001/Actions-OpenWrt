@@ -19,8 +19,8 @@ git clone https://github.com/pymumu/smartdns.git package/lean/smartdns
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/lean/luci-app-smartdns
 git clone -b packages https://github.com/xiaorouji/openwrt-passwall.git package/lean/passwall
 git clone -b luci-smartdns-new-version https://github.com/xiaorouji/openwrt-passwall.git package/lean/luci-app-passwall
-./scripts/feeds update packages
-rm -rf feeds/packages/lang/golang
-svn co https://github.com/openwrt/packages/branches/openwrt-22.03/lang/golang feeds/packages/lang/golang
+#./scripts/feeds update packages
+#rm -rf feeds/packages/lang/golang
+#svn co https://github.com/openwrt/packages/branches/openwrt-22.03/lang/golang feeds/packages/lang/golang
 ./scripts/feeds update -a
 ./scripts/feeds install -a
