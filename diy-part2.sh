@@ -22,5 +22,6 @@ git clone -b luci-smartdns-new-version https://github.com/xiaorouji/openwrt-pass
 #./scripts/feeds update packages
 #rm -rf feeds/packages/lang/golang
 #svn co https://github.com/openwrt/packages/branches/openwrt-22.03/lang/golang feeds/packages/lang/golang
-./scripts/feeds update -a
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golan
 ./scripts/feeds install -a
